@@ -1,6 +1,8 @@
+/* box-sizing fixed box alignment with header */
 *{
     box-sizing: border-box;
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: #777;
@@ -37,6 +39,7 @@ aside{
     float: left;
     padding: 35px;
     margin-left: 20px;
+/* guessed the height to match section as best as possible */
     height: 310px;
 }
 
@@ -44,6 +47,7 @@ article{
     color: #ebebeb;
     background: #777;
     padding: 20px;
+/* made a box with margin using top, right, bottom, and left. */
     margin: 20px -20px -20px -20px;
 }
 
@@ -51,7 +55,7 @@ article{
     color: #777;
     background: #ebebeb;
 }
-
+/* used id for specific adjustment instead of class */
 #p{
     padding: 1px;
     margin: 10px;
@@ -61,10 +65,11 @@ article{
     padding: 1px;
     margin: 10px;
 }
-
+/* class */
 .content{
     width: 960px;
     margin: 20px auto;
+/* overflow seperated footer from section and aside */
     overflow: auto;
 }
 
@@ -72,5 +77,5 @@ footer{
     background-color: #ebebeb;
     width: 960px;
     padding: 35px;
-    margin: auto;
+    margin: 20px auto;
 }
